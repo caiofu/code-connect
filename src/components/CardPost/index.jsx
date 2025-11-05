@@ -15,7 +15,7 @@ export const CardPost = ({post}) => {
             </section>
             <footer className={styles.footer}>
                 <button>Leia mais</button>
-                <Avatar name={post.author.name} imageSrc={post.author.avatar} />
+                <Avatar name={post.author.username} imageSrc={post.author.avatar} />
             </footer>
         </article>
     )
