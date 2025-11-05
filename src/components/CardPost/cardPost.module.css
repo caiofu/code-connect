@@ -52,3 +52,8 @@
   align-items: center;
   padding: 10px 20px;
 }
+
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
