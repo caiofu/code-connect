@@ -9,13 +9,16 @@ export const metadata = {
 const prompt = Prompt({ subsets: ['latin'], weight: ['400', '600'], display: 'swap' });
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br" className={prompt.className}>
+     <html lang="pt-br" className={prompt.className}>
       <body>
-        <div className='app-container'> 
+        <div className='app-container'>
+          <div>
             <Aside />
+          </div>
+          <div className='main-content'>
             {children}
+          </div>
         </div>
-      
       </body>
     </html>
   );
