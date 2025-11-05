@@ -1,0 +1,54 @@
+.cardPost {
+   
+    background-color: #171D1F;
+    border-radius: 8px;
+    width: 486px;
+    height: 431px;
+   
+   
+}
+
+.cardPost header{
+    background-color: #888888;
+    border-radius: 8px 8px 0 0;
+    padding: 24px;
+     gap: 8px;
+}
+
+ .cardPost header figure{
+    margin: 0;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+ 
+  
+} 
+
+.cardPost header figure img{
+    border-radius: 8px;
+       filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.24));
+   
+   
+}
+.text {
+  
+    padding: 16px;
+    gap: 32px;
+   
+}
+.text h2 {
+    color: #BCBCBC;
+    margin: 0;
+  
+}
+
+.text p {
+    color: #BCBCBC;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
