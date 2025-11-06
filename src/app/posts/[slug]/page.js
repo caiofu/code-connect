@@ -1,6 +1,9 @@
+import { CardPost } from "@/components/CardPost";
 import logger from "@/logger";
 import { remark } from "remark";
+import styles from './page.module.css'
 import html from "remark-html";
+
 
 async function getPostBySlug(slug) {
     const url = `http://localhost:3042/posts?slug=${slug}`;
@@ -22,19 +25,25 @@ async function getPostBySlug(slug) {
     .process(post.markdown);
     const contentHtml = proceesedContent.toString();
     post.markdown = contentHtml
-  return post;      
- 
+  return post;
+
 }
 
 const PagePost = async ({params}) => {
-   
-    const post =  await getPostBySlug(params.slug); 
+
+    const post =  await getPostBySlug(params.slug);
     if (!post) {
         return <h1>Post não encontrado</h1>;
     }
-    return (<>
-    <h1 style={{color: "white"}}>{post.title}</h1>
-    <div style={{color: 'white'}} dangerouslySetInnerHTML={{__html: post.markdown}} />
-    </>);
+    return (<div>
+            <CardPost post={post} highlight/>
+            <h3 className={styles.subtitle}>Código:</h3>
+
+            <div className={styles.code}>
+              <div style={{color: 'white'}} dangerouslySetInnerHTML={{__html: post.markdown}} />
+            </div>
+            
+
+      </div>);
 };
-export default PagePost; 
+export default PagePost;
