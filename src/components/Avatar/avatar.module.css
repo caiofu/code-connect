@@ -1,11 +1,14 @@
-.avatar li {
-  display: flex;             /* coloca imagem e texto na mesma linha */
-  align-items: center;       /* alinha verticalmente */
-  gap: 8px;                  /* espaçamento entre imagem e texto */
-  list-style: none;          /* remove a bolinha padrão */
-}
-
-.avatar li span {
-  font-size: 14px;           /* tamanho da fonte do nome */
-  color: #BCBCBC;               /* cor do texto */
+.avatar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    color: #888888;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
 }

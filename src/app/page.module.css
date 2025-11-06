@@ -3,16 +3,13 @@
     gap: 24px;
     flex-wrap: wrap;
     justify-content: space-between;
-   
-}
-.linkPagination {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 20px; 
 }
 
-.linkPagination a{
-    color: green;
- 
+.links {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.links a {
+    margin: 0 8px;
 }

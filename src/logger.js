@@ -1,9 +1,8 @@
-import { createLogger, format,  transports  } from 'winston';
+import { createLogger, format, transports } from 'winston';
 
 const logger = createLogger({
   level: 'info',
   format: format.json(),
-  defaultMeta: { service: 'user-service' },
   transports: [
     //
     // - Write all logs with importance level of `error` or less to `error.log`
@@ -14,4 +13,4 @@ const logger = createLogger({
   ],
 });
 
-export default logger;
+export default logger

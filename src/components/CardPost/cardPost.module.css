@@ -1,60 +1,50 @@
-.cardPost {
-   
-    background-color: #171D1F;
-    border-radius: 8px;
+.card {
     width: 486px;
-    height: auto;
-   
-   
-}
-
-.cardPost header{
-    background-color: #888888;
-    border-radius: 8px 8px 0 0;
-    padding: 24px;
-     gap: 8px;
-}
-
- .cardPost header figure{
-    margin: 0;
-    gap: 12px;
-    width: 100%;
-    text-align: center;
-    position: relative;
- 
-  
-} 
-
-.cardPost header figure img{
     border-radius: 8px;
-       filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.24));
-   
-   
-}
-.text {
-  
-    padding: 16px;
-    gap: 32px;
-   
-}
-.text h2 {
-    color: #BCBCBC;
-    margin: 0;
-  
+    background: #171D1F;
 }
 
-.text p {
+.header {
+    border-radius: 8px 8px 0px 0px;
+    background: #888;
+    padding: 24px;
+}
+
+.header figure {
+    margin: 0;
+    position: relative;
+}
+
+.body {
     color: #BCBCBC;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.body h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    margin: 0;
+}
+
+.body p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+    flex-grow: 1;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+    padding: 16px;
 }
 
-.link{
+.link {
     text-decoration: none;
     cursor: pointer;
 }

@@ -1,5 +1,5 @@
 .code {
-   
+    padding: 16px;
     border-radius: 8px;
     background: #171D1F;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.24);
@@ -8,11 +8,6 @@
     color: #BCBCBC;
     line-height: 150%;
     font-size: 15px;
-    width: 993px;
-}
-
-.code div{
-    padding: 16px;
 }
 
 .subtitle {
@@ -21,5 +16,4 @@
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-    
 }
